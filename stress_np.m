@@ -1,18 +1,18 @@
 % stress change with np
 p4
 
-npp = logspace(19,23,10);
+npp = logspace(19+log10(2.3),19+log10(3),5);
 stre = zeros(length(npp),length(lambda));
 for k = 1:length(npp)
     % overwrite original parameter
     np = npp(k);
     stress
-    stre(k,:) = S*0.003^2*3.1416;
+    stre(k,:) = S;
     k
 end
 for i=1:10
     plot(lambda,stre(i,:))
-    legend('np = 1e19','np = 3e19','np = 8e19','np = 2e20','np = 6e20','np = 2e21','np = 5e21','np = 1e22','np = 4e22','np = 1e23')
+    %legend('np = 1e19','np = 3e19','np = 8e19','np = 2e20','np = 6e20','np = 2e21','np = 5e21','np = 1e22','np = 4e22','np = 1e23')
     hold on
 end
 xlabel('stretch ratio')
