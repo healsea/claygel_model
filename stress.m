@@ -6,7 +6,7 @@ D = sqrt(3)/2*(2/np)^(1/3);
 % compute chain length distribution
 G = 3*D^2./(2*b^2.*n);
 mid = k_active/sqrt(pi).*(sqrt(6*n).*exp(-G)+3*D/b*sqrt(pi*n).*erf(sqrt(G))-sqrt(6)*exp(-G.*n)-3*D/b.*erf(sqrt(G.*n)));
-final=k_active*sqrt(3/2/pi./n).*exp(-G-mid+1000);% un-normalized P, +500 to avoid final to be so small to regonized as zero in matlab
+final=k_active*sqrt(3/2/pi./n).*exp(-G-mid+7800);% un-normalized P, +7600 to avoid final to be so small to regonized as zero in matlab For np=1e19
 P = final/sum(final);
 plot(n,P)
 
