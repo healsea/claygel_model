@@ -1,7 +1,7 @@
 % stress change with np
 p4
 
-npp = logspace(18+log10(4),18+log10(5.6),5);
+npp = logspace(19,20,5);
 stre = zeros(length(npp),length(lambda));
 for k = 1:length(npp)
     % overwrite original parameter
@@ -10,7 +10,6 @@ for k = 1:length(npp)
     stre(k,:) = S;
     k
 end
-5
 xlabel('stretch ratio')
 
 % for i=1:5:length(lambda)

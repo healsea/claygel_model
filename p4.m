@@ -4,10 +4,8 @@ clear
 n = 2000:1:4000;
 
 %crosslinker density
-%np = 8.2e19;
-np = 8.72e21;
-% crosslinker distance
-D = sqrt(3)/2*(2/np)^(1/3);
+np = 8.2e19;
+%np = 8.72e21;
 % kuhn length
 b = 1.1e-10;
 %D = b*100;
