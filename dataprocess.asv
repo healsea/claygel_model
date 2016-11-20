@@ -1,5 +1,5 @@
 %data processing
-load('1117_5_266.mat');
+load('1117_4_240.mat');
 len = 26.6;
 A = 3.1416*0.006^2;
 pos = pos(2:length(pos)-100);

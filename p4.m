@@ -18,7 +18,7 @@ nsite = 108;
 k_active = b^2*nsite/4/r0^2;
 %k_active = 0.0058;
 %fstr = fstr_easy*kb*T/b; chain break force
-fstr_easy = 2;
+fstr_easy = 4;
 
 kb = 1.38e-23;
 T = 295;
