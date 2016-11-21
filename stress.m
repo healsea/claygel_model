@@ -2,7 +2,9 @@
 %p4
 
 % crosslinker distance
-D = sqrt(3)/2*(2/np)^(1/3);
+%D = sqrt(3)/2*(2/np)^(1/3);
+% This D assume D/b = 100 when np = 8.2e19
+D = (b*100)*(8.2e19/np)^(1/3);
 % compute chain length distribution
 G = 3*D^2./(2*b^2.*n);
 mid = k_active/sqrt(pi).*(sqrt(6*n).*exp(-G)+3*D/b*sqrt(pi*n).*erf(sqrt(G))-sqrt(6)*exp(-G.*n)-3*D/b.*erf(sqrt(G.*n)));
