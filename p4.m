@@ -4,7 +4,7 @@ clear
 n = 1:1:5000;
 
 %crosslinker density
-np = 1e21;
+np = 4e20;
 %np = 8.72e21;
 % kuhn length
 b = 1.1e-10;
@@ -20,6 +20,7 @@ fstr_easy = 4;
 
 kb = 1.38e-23;
 lambda = 1:0.1:8;
+T = 306;
 
 % % This part try to test the appropriate n and constant added in the process of computing final
 % %D = sqrt(3)/2*(2/np)^(1/3);
