@@ -32,4 +32,4 @@ end
 %semilogx(lambda.^3,Wstr*150./Wmix)
 plot(lambda ,S) 
 xlabel('stretch ratio');
-ylabel('stress/N');
+ylabel('stress/Pa');
